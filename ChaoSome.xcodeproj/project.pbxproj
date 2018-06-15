@@ -13,6 +13,7 @@
 		FB733C9720D2DF7B007B9CA5 /* ChaoSome.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = FB733C9520D2DF7B007B9CA5 /* ChaoSome.xcdatamodeld */; };
 		FB733C9920D2DF7C007B9CA5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FB733C9820D2DF7C007B9CA5 /* Assets.xcassets */; };
 		FB733C9C20D2DF7C007B9CA5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB733C9A20D2DF7C007B9CA5 /* LaunchScreen.storyboard */; };
+		FB733CA420D2E829007B9CA5 /* Default.plist in Resources */ = {isa = PBXBuildFile; fileRef = FB733CA320D2E829007B9CA5 /* Default.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,8 @@
 		FB733C9820D2DF7C007B9CA5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FB733C9B20D2DF7C007B9CA5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FB733C9D20D2DF7C007B9CA5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FB733CA320D2E829007B9CA5 /* Default.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Default.plist; sourceTree = "<group>"; };
+		FB733CA820D2FA30007B9CA5 /* ChaoSome.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = ChaoSome.entitlements; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -42,6 +45,7 @@
 			children = (
 				FB733C8D20D2DF7A007B9CA5 /* ChaoSome */,
 				FB733C8C20D2DF7A007B9CA5 /* Products */,
+				FB733CA520D2FA30007B9CA5 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -56,6 +60,7 @@
 		FB733C8D20D2DF7A007B9CA5 /* ChaoSome */ = {
 			isa = PBXGroup;
 			children = (
+				FB733CA820D2FA30007B9CA5 /* ChaoSome.entitlements */,
 				FB733C8E20D2DF7A007B9CA5 /* AppDelegate.swift */,
 				FB733C9020D2DF7B007B9CA5 /* ViewController.swift */,
 				FB733C9220D2DF7B007B9CA5 /* Main.storyboard */,
@@ -63,8 +68,16 @@
 				FB733C9A20D2DF7C007B9CA5 /* LaunchScreen.storyboard */,
 				FB733C9D20D2DF7C007B9CA5 /* Info.plist */,
 				FB733C9520D2DF7B007B9CA5 /* ChaoSome.xcdatamodeld */,
+				FB733CA320D2E829007B9CA5 /* Default.plist */,
 			);
 			path = ChaoSome;
+			sourceTree = "<group>";
+		};
+		FB733CA520D2FA30007B9CA5 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Frameworks;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -99,6 +112,11 @@
 				TargetAttributes = {
 					FB733C8A20D2DF7A007B9CA5 = {
 						CreatedOnToolsVersion = 9.4;
+						SystemCapabilities = {
+							com.apple.WAC = {
+								enabled = 0;
+							};
+						};
 					};
 				};
 			};
@@ -125,6 +143,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB733CA420D2E829007B9CA5 /* Default.plist in Resources */,
 				FB733C9C20D2DF7C007B9CA5 /* LaunchScreen.storyboard in Resources */,
 				FB733C9920D2DF7C007B9CA5 /* Assets.xcassets in Resources */,
 				FB733C9420D2DF7B007B9CA5 /* Main.storyboard in Resources */,
@@ -287,6 +306,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S43QRZH5C6;
 				INFOPLIST_FILE = ChaoSome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -305,6 +325,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = S43QRZH5C6;
 				INFOPLIST_FILE = ChaoSome/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 11.1;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
